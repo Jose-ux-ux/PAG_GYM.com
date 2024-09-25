@@ -1,0 +1,392 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+header {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  padding: 10px 20px;
+  flex-wrap: wrap; /* Asegura que los elementos del header se ajusten en pantallas pequeñas */
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: hsl(0deg 0% 100%);
+  font-size: 1.5rem;
+}
+
+.logo > img {
+  width: 3rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-right: 2%;
+
+}
+
+.enlaces {
+  text-decoration:none ;
+  color: rgb(240, 248, 255);
+  font-size: 22px;
+  transition: color 0.5s; 
+}
+.enlaces:hover{
+  color: #8e4b36cb;
+}
+.imagen_slash {
+
+  background: url('../Galería/pexels-leonardho-1552252.jpg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.llamada-atencion {
+  height: 550px;
+  background: url(../Galería/pexels-leonardho-1552252.jpg) bottom /cover fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  max-height: 60%;
+  min-height: 60%;
+  
+}
+
+
+h2 {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 3rem;
+  color: hsl(0deg 0% 100%);
+}
+
+.libera {
+  color: hsl(0deg 0% 100%);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 0.2rem 2rem;
+  border-radius: 10px;
+}
+
+.activities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #dddddd79;
+}
+
+.activities > div {
+  color: #09090b;
+  padding: 30px;
+  margin: 24px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: #fcfcfc;
+}
+
+.activities > div > img {
+  width: 70px;
+}
+
+.activities > div > h3 {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.activities > div > p {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.planes {
+  text-align: center;
+}
+
+.planes > h3 {
+  margin: 40px 0 0 0;
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.planes > p {
+  text-decoration: line-through rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+.precios {
+  display: grid;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  grid-template-columns: repeat(3, 0.3fr);
+  gap: 40px 20px;
+  padding-top: 40px;
+}
+
+.precios > div {
+  box-sizing: border-box;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgb(158, 158, 158);
+  margin-bottom: 20px;
+}
+
+.precios > div > h4,
+.precios > div > p {
+  text-align: center;
+}
+
+.precios > div > h4 {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 20px 0 4px 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contact {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact > div {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  margin-bottom: 40px;
+}
+
+.h2-contact {
+  color: #09090b;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.h2-visit {
+  color: #09090b;
+  font-size: 24px;
+}
+
+.contact > div > p,
+div > ul {
+  color: #6e6e77;
+}
+iframe{
+  width: 700px; 
+  height:500px; 
+  border-radius: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+thead th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+}
+
+tbody td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+tbody td {
+  padding: 12px;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #333;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+}
+
+table th {
+  position: sticky;
+  top: 0;
+}
+
+td[colspan] {
+  background-color: #ffeb3b;
+}
+
+
+
+footer {
+  background-color: #09090b;
+  color: #ffff;
+  text-align: center;
+  padding: 1px;
+}
+
+/* Media Queries para pantallas más pequeñas */
+
+@media (max-width: 1200px) {
+  nav {
+    width: 300px;
+  }
+
+  .precios {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    grid-template-columns: 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 20px;
+  }
+
+  .h2-contact {
+    font-size: 28px;
+  }
+
+  .h2-visit {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .enlaces {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .precios {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .activities {
+    grid-template-columns: 1fr;
+  }
+
+  .llamada-atencion {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .libera {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .libera {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.2rem 1.5rem;
+  }
+
+  .precios {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .enlaces {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .h2-contact {
+    font-size: 24px;
+  }
+
+  .h2-visit {
+    font-size: 18px;
+  }
+}
